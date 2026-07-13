@@ -98,38 +98,62 @@
   {
     "id": "a1b2c3d4-0013-4000-8000-ef1234560013",
     "position": 13,
-    "filepath": "src/pages/slides/Slide13OngoingAisle.tsx",
-    "title": "Ongoing — Aisle",
-    "description": "Web Checkout + Deleted Matches + Multi Comment UX (6 photo slots)",
+    "filepath": "src/pages/slides/Slide13WebCheckoutAisle.tsx",
+    "title": "Web CheckOut Aisle",
+    "description": "Aisle — Ongoing — In Progress — 2 photo slots",
     "speakerNotes": ""
   },
   {
     "id": "a1b2c3d4-0014-4000-8000-ef1234560014",
     "position": 14,
-    "filepath": "src/pages/slides/Slide14OngoingArike1.tsx",
-    "title": "Ongoing — Arike (1 of 2)",
-    "description": "Web Checkout (5 photos) + SmartPicks (2 photos)",
+    "filepath": "src/pages/slides/Slide14InformDeletedMatches.tsx",
+    "title": "Inform — Deleted Matches",
+    "description": "Aisle — Ongoing — In Progress — 2 photo slots",
     "speakerNotes": ""
   },
   {
     "id": "a1b2c3d4-0015-4000-8000-ef1234560015",
     "position": 15,
-    "filepath": "src/pages/slides/Slide15OngoingArike2.tsx",
-    "title": "Ongoing — Arike (2 of 2)",
-    "description": "Blocking (1 photo) + Intl Payment + 90D Check",
+    "filepath": "src/pages/slides/Slide15MultiCommentUX.tsx",
+    "title": "Multi Comment UX",
+    "description": "Aisle — Ongoing — Open — 2 photo slots",
     "speakerNotes": ""
   },
   {
     "id": "a1b2c3d4-0016-4000-8000-ef1234560016",
     "position": 16,
+    "filepath": "src/pages/slides/Slide16WebCheckoutArike.tsx",
+    "title": "Web CheckOut Arike",
+    "description": "Arike — Ongoing — In Progress — 5 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0017-4000-8000-ef1234560017",
+    "position": 17,
+    "filepath": "src/pages/slides/Slide17ArikeSmartPicks.tsx",
+    "title": "Arike SmartPicks",
+    "description": "Arike — Ongoing — In Progress — 2 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0018-4000-8000-ef1234560018",
+    "position": 18,
+    "filepath": "src/pages/slides/Slide15OngoingArike2.tsx",
+    "title": "Ongoing — Arike (Blocking + Intl + 90D)",
+    "description": "Inform Significant Blocking (1 photo) + Intl Payment + 90D Check",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0019-4000-8000-ef1234560019",
+    "position": 19,
     "filepath": "src/pages/slides/Slide16Common.tsx",
     "title": "Common Tasks",
     "description": "Hang Rate Improvements + Shuffle Profile Photos",
     "speakerNotes": ""
   },
   {
-    "id": "a1b2c3d4-0017-4000-8000-ef1234560017",
-    "position": 17,
+    "id": "a1b2c3d4-0020-4000-8000-ef1234560020",
+    "position": 20,
     "filepath": "src/pages/slides/Slide17Closing.tsx",
     "title": "Closing",
     "description": "Keep Building — summary stats",
