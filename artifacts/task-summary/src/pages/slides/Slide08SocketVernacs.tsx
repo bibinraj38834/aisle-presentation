@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const PhotoSlot = ({ label }: { label: string }) => (
   <div style={{ border: "2px dashed rgba(255,255,255,0.18)", borderRadius: "1vw", background: "rgba(255,255,255,0.03)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1 }}>
     <svg width="3.5vw" height="3.5vw" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -7,6 +9,12 @@ const PhotoSlot = ({ label }: { label: string }) => (
       <circle cx="12" cy="13" r="4"/>
     </svg>
     <p style={{ color: "rgba(255,255,255,0.22)", fontSize: "1.5vw", marginTop: "1vh", fontFamily: "var(--font-body-family)", textAlign: "center" }}>{label}</p>
+  </div>
+);
+
+const Img = ({ src, alt }: { src: string; alt: string }) => (
+  <div style={{ borderRadius: "1vw", overflow: "hidden", flex: 1, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -32,15 +40,15 @@ export default function Slide08SocketVernacs() {
         </h2>
 
         <p style={{ ...s(0.4, "fadeInUp"), fontFamily: "var(--font-body-family)", fontSize: "2vw", color: "#7B7F9A", lineHeight: 1.55, maxWidth: "72vw", margin: "0 0 1.5vh 0" }}>
-          Real-time socket updates for Vernac/Arike — no more manual refresh for new matches, incoming messages, unread counts, chat ordering, and in-app nudges. Supports refresh_matches and show_popup flows.
+          Real-time socket updates for Vernac/Arike — no more manual refresh for new matches, messages, unread counts, chat ordering, and in-app nudges.
         </p>
         <p style={{ ...s(0.48, "fadeInUp"), fontFamily: "var(--font-body-family)", fontSize: "1.7vw", color: "rgba(0,168,150,0.8)", lineHeight: 1.4, maxWidth: "72vw", margin: "0 0 3vh 0" }}>
-          Also includes Boost Phase 2 — contextual pop-ups for approved male users based on behavior cohorts (new users, DAU, low visibility, likes sent, profile edits).
+          Also includes Boost Phase 2 — contextual pop-ups for approved male users based on behaviour cohorts.
         </p>
 
         <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
           <PhotoSlot label="Photo 1 of 2" />
-          <PhotoSlot label="Photo 2 of 2" />
+          <Img src={`${base}socket-on-vernacs-2.png`} alt="Socket on Vernacs screen 2" />
         </div>
       </div>
 
