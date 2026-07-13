@@ -14,7 +14,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import { slides } from '@/slideLoader';
-import { useLocation } from 'wouter';
+import { Router, useLocation } from 'wouter';
 
 function getSlideIndex(pathname: string): number {
   const match = pathname.match(/^\/slide(\d+)$/);
@@ -223,7 +223,7 @@ function SlideViewer() {
   );
 }
 
-export default function App() {
+function AppContent() {
   const [location, navigate] = useLocation();
 
   // DO NOT edit this useEffect - redirects unknown routes to the first slide.
@@ -261,4 +261,13 @@ export default function App() {
   if (location === '/') return <SlideViewer />;
   if (location === '/allslides') return <AllSlides />;
   return <SlideEditor />;
+}
+
+export default function App() {
+  const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+  return (
+    <Router base={base}>
+      <AppContent />
+    </Router>
+  );
 }
