@@ -1,0 +1,8 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "lbQZe0kZlyE0KOK01cDz8"
+uri = "file://.local/outputs/CleverTap-Summary.pptx"
+type = "slides"
+title = "CleverTap Summary.pptx"
