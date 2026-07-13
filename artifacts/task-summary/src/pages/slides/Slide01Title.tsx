@@ -23,6 +23,94 @@ export default function Slide01Title() {
         <div className="absolute" style={{ top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "9vw", height: "9vw", borderRadius: "50%", background: "rgba(145,54,108,0.08)", border: "1px solid rgba(145,54,108,0.3)" }} />
       </div>
 
+      {/* Scattered iPhone-style App Icons on the right side */}
+      <div className="absolute" style={{ right: 0, top: 0, bottom: 0, width: "38vw", pointerEvents: "none" }}>
+        {/* Aisle Icon */}
+        <div style={{
+          position: "absolute",
+          top: "12vh",
+          right: "22vw",
+          width: "7vw",
+          height: "7vw",
+          borderRadius: "22%",
+          overflow: "hidden",
+          border: "1px solid rgba(255,255,255,0.15)",
+          boxShadow: "0 1vw 2vw rgba(0,0,0,0.4)",
+          animation: isExport ? "none" : "float1 5s ease-in-out infinite",
+          pointerEvents: "auto"
+        }}>
+          <img src={`${base}aisle-app-icon.webp`} alt="Aisle Icon" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+
+        {/* Arike Icon */}
+        <div style={{
+          position: "absolute",
+          top: "32vh",
+          right: "6vw",
+          width: "8vw",
+          height: "8vw",
+          borderRadius: "22%",
+          overflow: "hidden",
+          border: "1px solid rgba(255,255,255,0.15)",
+          boxShadow: "0 1.2vw 2.5vw rgba(0,0,0,0.4)",
+          animation: isExport ? "none" : "float2 6s ease-in-out infinite",
+          pointerEvents: "auto"
+        }}>
+          <img src={`${base}arike-app-icon.webp`} alt="Arike Icon" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+
+        {/* Anbe Icon */}
+        <div style={{
+          position: "absolute",
+          top: "54vh",
+          right: "24vw",
+          width: "6.5vw",
+          height: "6.5vw",
+          borderRadius: "22%",
+          overflow: "hidden",
+          border: "1px solid rgba(255,255,255,0.15)",
+          boxShadow: "0 0.9vw 1.8vw rgba(0,0,0,0.4)",
+          animation: isExport ? "none" : "float3 5.5s ease-in-out infinite",
+          pointerEvents: "auto"
+        }}>
+          <img src={`${base}anbe-app-icon.webp`} alt="Anbe Icon" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+
+        {/* Neene Icon */}
+        <div style={{
+          position: "absolute",
+          top: "68vh",
+          right: "10vw",
+          width: "7.5vw",
+          height: "7.5vw",
+          borderRadius: "22%",
+          overflow: "hidden",
+          border: "1px solid rgba(255,255,255,0.15)",
+          boxShadow: "0 1.1vw 2.2vw rgba(0,0,0,0.4)",
+          animation: isExport ? "none" : "float4 4.8s ease-in-out infinite",
+          pointerEvents: "auto"
+        }}>
+          <img src={`${base}neene-app-icon.webp`} alt="Neene Icon" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+
+        {/* Neetho Icon */}
+        <div style={{
+          position: "absolute",
+          top: "20vh",
+          right: "8vw",
+          width: "6vw",
+          height: "6vw",
+          borderRadius: "22%",
+          overflow: "hidden",
+          border: "1px solid rgba(255,255,255,0.15)",
+          boxShadow: "0 0.8vw 1.6vw rgba(0,0,0,0.4)",
+          animation: isExport ? "none" : "float5 5.8s ease-in-out infinite",
+          pointerEvents: "auto"
+        }}>
+          <img src={`${base}neetho-app-icon.webp`} alt="Neetho Icon" style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+        </div>
+      </div>
+
       {/* Left accent bar */}
       <div className="absolute left-0 top-0 bottom-0" style={{ width: "0.5vw", background: "linear-gradient(to bottom, #91366C, #332373)", transformOrigin: "top", animation: isExport ? "none" : "barGrow 0.9s ease forwards 0s" }} />
 

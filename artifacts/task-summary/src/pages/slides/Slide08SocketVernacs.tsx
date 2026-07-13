@@ -13,8 +13,14 @@ const PhotoSlot = ({ label }: { label: string }) => (
 );
 
 const Img = ({ src, alt }: { src: string; alt: string }) => (
-  <div style={{ borderRadius: "1vw", overflow: "hidden", flex: 1, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-    <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
+  </div>
+);
+
+const Video = ({ src }: { src: string }) => (
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <video src={src} controls autoPlay loop muted playsInline style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -46,8 +52,8 @@ export default function Slide08SocketVernacs() {
           Also includes Boost Phase 2 — contextual pop-ups for approved male users based on behaviour cohorts.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
-          <PhotoSlot label="Photo 1 of 2" />
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", minHeight: 0, gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
+          <Video src={`${base}socket-on-vernacs-1.MP4`} />
           <Img src={`${base}socket-on-vernacs-2.png`} alt="Socket on Vernacs screen 2" />
         </div>
       </div>

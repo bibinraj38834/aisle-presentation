@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const PhotoSlot = ({ label }: { label: string }) => (
   <div style={{ border: "2px dashed rgba(255,255,255,0.18)", borderRadius: "1vw", background: "rgba(255,255,255,0.03)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", flex: 1 }}>
     <svg width="3.5vw" height="3.5vw" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -7,6 +9,12 @@ const PhotoSlot = ({ label }: { label: string }) => (
       <circle cx="12" cy="13" r="4"/>
     </svg>
     <p style={{ color: "rgba(255,255,255,0.22)", fontSize: "1.5vw", marginTop: "1vh", fontFamily: "var(--font-body-family)", textAlign: "center" }}>{label}</p>
+  </div>
+);
+
+const Img = ({ src, alt }: { src: string; alt: string }) => (
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -35,12 +43,12 @@ export default function Slide16WebCheckoutArike() {
           Payment website parity, design states, pricing handling, and checkout flow setup for the Arike web surface.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gridTemplateRows: "1fr 1fr", gap: "2vh 2vw" }}>
-          <PhotoSlot label="Photo 1 of 5" />
-          <PhotoSlot label="Photo 2 of 5" />
-          <PhotoSlot label="Photo 3 of 5" />
-          <PhotoSlot label="Photo 4 of 5" />
-          <PhotoSlot label="Photo 5 of 5" />
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", minHeight: 0, gridTemplateColumns: "1fr 1fr 1fr", gridTemplateRows: "1fr 1fr", gap: "2vh 2vw" }}>
+          <Img src={`${base}web-checkout-arike-1.png`} alt="Web Checkout Arike screen 1" />
+          <Img src={`${base}web-checkout-arike-2.png`} alt="Web Checkout Arike screen 2" />
+          <Img src={`${base}web-checkout-arike-3.png`} alt="Web Checkout Arike screen 3" />
+          <Img src={`${base}web-checkout-arike-4.png`} alt="Web Checkout Arike screen 4" />
+          <Img src={`${base}web-checkout-arike-5.png`} alt="Web Checkout Arike screen 5" />
           <div style={{ border: "none" }} />
         </div>
       </div>

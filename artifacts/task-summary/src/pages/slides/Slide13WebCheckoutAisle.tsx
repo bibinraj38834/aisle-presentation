@@ -3,8 +3,8 @@ import React from "react";
 const base = import.meta.env.BASE_URL;
 
 const Img = ({ src, alt }: { src: string; alt: string }) => (
-  <div style={{ borderRadius: "1vw", overflow: "hidden", flex: 1, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-    <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -33,7 +33,7 @@ export default function Slide13WebCheckoutAisle() {
           Payment flow, promotional template handling, experiment conditions, MBG integration, and checkout messaging — bringing feature parity to the Aisle web payment surface.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", minHeight: 0, gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
           <Img src={`${base}web-checkout-aisle-1.png`} alt="Web Checkout Aisle screen 1" />
           <Img src={`${base}web-checkout-aisle-2.png`} alt="Web Checkout Aisle screen 2" />
         </div>

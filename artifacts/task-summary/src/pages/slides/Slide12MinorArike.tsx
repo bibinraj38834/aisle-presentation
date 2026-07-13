@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const PhotoSlot = ({ label }: { label: string }) => (
   <div style={{ border: "2px dashed rgba(255,255,255,0.18)", borderRadius: "0.8vw", background: "rgba(255,255,255,0.03)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "12vh" }}>
     <svg width="2.5vw" height="2.5vw" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -7,6 +9,12 @@ const PhotoSlot = ({ label }: { label: string }) => (
       <circle cx="12" cy="13" r="4"/>
     </svg>
     <p style={{ color: "rgba(255,255,255,0.2)", fontSize: "1.4vw", marginTop: "0.7vh", fontFamily: "var(--font-body-family)", textAlign: "center" }}>{label}</p>
+  </div>
+);
+
+const Img = ({ src, alt }: { src: string; alt: string }) => (
+  <div style={{ borderRadius: "0.8vw", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", height: "12vh", background: "rgba(255,255,255,0.04)" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -50,9 +58,7 @@ export default function Slide12MinorArike() {
             <span style={{ color: "#10B981", background: "rgba(16,185,129,0.12)", border: "1px solid rgba(16,185,129,0.35)", padding: "0.2vh 1vw", borderRadius: "100px", fontSize: "1.35vw", fontWeight: 600, flexShrink: 0 }}>In Prod</span>
           </div>
           <p style={{ fontFamily: "var(--font-body-family)", fontSize: "1.6vw", color: "#7B7F9A", lineHeight: 1.45, margin: 0, flex: 1 }}>Added popup communication after image upload to inform users that photos go live after review.</p>
-          <div style={{ marginTop: "1.5vh" }}>
-            <PhotoSlot label="Photo 1 of 1" />
-          </div>
+
         </div>
 
         {/* Card 3 */}

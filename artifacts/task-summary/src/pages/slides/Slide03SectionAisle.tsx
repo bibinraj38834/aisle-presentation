@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 export default function Slide03SectionAisle() {
   const isExport = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
   const s = (delay: number, anim = "fadeInLeft"): React.CSSProperties =>
@@ -16,7 +18,9 @@ export default function Slide03SectionAisle() {
       {/* Large decorative circle */}
       <div className="absolute" style={{ right: "-8vw", top: "50%", transform: "translateY(-50%)", width: "55vw", height: "55vw", borderRadius: "50%", border: "1px solid rgba(255,255,255,0.08)" }} />
       <div className="absolute" style={{ right: "-4vw", top: "50%", transform: "translateY(-50%)", width: "40vw", height: "40vw", borderRadius: "50%", border: "1px solid rgba(255,255,255,0.05)" }} />
-      <div className="absolute" style={{ right: "8vw", top: "50%", transform: "translateY(-50%)", width: "22vw", height: "22vw", borderRadius: "50%", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)" }} />
+      <div className="absolute" style={{ right: "8vw", top: "50%", transform: "translateY(-50%)", width: "22vw", height: "22vw", borderRadius: "50%", background: "rgba(255, 255, 255, 0.04)", border: "1px solid rgba(255, 255, 255, 0.1)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+        <img src={`${base}aisle-logo.png`} alt="Aisle Logo" style={{ width: "60%", height: "60%", objectFit: "contain" }} />
+      </div>
 
       {/* Left content */}
       <div className="absolute flex flex-col justify-center" style={{ top: 0, left: "7vw", right: "45vw", bottom: 0 }}>

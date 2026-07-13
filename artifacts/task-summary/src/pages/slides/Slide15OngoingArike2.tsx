@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 const PhotoSlot = ({ label }: { label: string }) => (
   <div style={{ border: "2px dashed rgba(255,255,255,0.16)", borderRadius: "0.8vw", background: "rgba(255,255,255,0.03)", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", minHeight: "13vh" }}>
     <svg width="2.4vw" height="2.4vw" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.22)" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
@@ -7,6 +9,12 @@ const PhotoSlot = ({ label }: { label: string }) => (
       <circle cx="12" cy="13" r="4"/>
     </svg>
     <p style={{ color: "rgba(255,255,255,0.2)", fontSize: "1.35vw", marginTop: "0.6vh", fontFamily: "var(--font-body-family)", textAlign: "center" }}>{label}</p>
+  </div>
+);
+
+const Img = ({ src, alt }: { src: string; alt: string }) => (
+  <div style={{ borderRadius: "0.8vw", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", height: "13vh", background: "rgba(255,255,255,0.04)" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -39,7 +47,7 @@ export default function Slide15OngoingArike2() {
           <span style={{ color: "#F59E0B", background: "rgba(245,158,11,0.12)", border: "1px solid rgba(245,158,11,0.35)", padding: "0.3vh 1.1vw", borderRadius: "100px", fontSize: "1.35vw", fontWeight: 600, alignSelf: "flex-start", marginBottom: "1.5vh" }}>In Progress</span>
           <h3 style={{ fontSize: "1.95vw", fontWeight: 700, color: "#fff", lineHeight: 1.2, letterSpacing: "-0.02em", margin: "0 0 1.2vh 0", flex: 1 }}>Inform — Significant Blocking</h3>
           <p style={{ fontFamily: "var(--font-body-family)", fontSize: "1.55vw", color: "#7B7F9A", lineHeight: 1.45, margin: "0 0 1.5vh 0" }}>Updates block popup education flow to discourage excessive blocking and warn users about profile review risk.</p>
-          <PhotoSlot label="Photo 1 of 1" />
+
         </div>
 
         {/* International Payment Gateway */}

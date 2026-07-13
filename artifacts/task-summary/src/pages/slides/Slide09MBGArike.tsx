@@ -3,8 +3,8 @@ import React from "react";
 const base = import.meta.env.BASE_URL;
 
 const Img = ({ src, alt }: { src: string; alt: string }) => (
-  <div style={{ borderRadius: "1vw", overflow: "hidden", flex: 1, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-    <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -32,7 +32,7 @@ export default function Slide09MBGArike() {
           Money Back Guarantee for eligible Arike premium plans — users who meet activity and profile requirements can claim a refund if they receive no match within the defined window.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "2vh 2vw" }}>
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", minHeight: 0, gridTemplateColumns: "1fr 1fr 1fr", gap: "2vh 2vw" }}>
           <Img src={`${base}mbg-arike-1.png`} alt="MBG Arike screen 1" />
           <Img src={`${base}mbg-arike-2.png`} alt="MBG Arike screen 2" />
           <Img src={`${base}mbg-arike-3.png`} alt="MBG Arike screen 3" />

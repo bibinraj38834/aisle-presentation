@@ -3,8 +3,8 @@ import React from "react";
 const base = import.meta.env.BASE_URL;
 
 const Img = ({ src, alt }: { src: string; alt: string }) => (
-  <div style={{ borderRadius: "1vw", overflow: "hidden", flex: 1, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
-    <img src={src} alt={alt} style={{ width: "100%", height: "100%", objectFit: "contain", display: "block" }} />
+  <div style={{ borderRadius: "1vw", overflow: "hidden", height: "100%", width: "100%", minHeight: 0, background: "rgba(255,255,255,0.04)", display: "flex", alignItems: "center", justifyContent: "center" }}>
+    <img src={src} alt={alt} style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain", display: "block" }} />
   </div>
 );
 
@@ -33,7 +33,7 @@ export default function Slide14InformDeletedMatches() {
           UI and backend handling so deleted, disabled, or banned matches don't silently disappear from chats. Users are informed with clear messaging instead of experiencing confusing empty states.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", minHeight: 0, gridTemplateColumns: "1fr 1fr", gap: "2vh 2vw" }}>
           <Img src={`${base}inform-deleted-1.png`} alt="Inform deleted matches screen 1" />
           <Img src={`${base}inform-deleted-2.png`} alt="Inform deleted matches screen 2" />
         </div>

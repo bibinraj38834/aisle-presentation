@@ -1,5 +1,7 @@
 import React from "react";
 
+const base = import.meta.env.BASE_URL;
+
 export default function Slide13SectionMinorArike() {
   const isExport = typeof window !== "undefined" && window.location.pathname.endsWith("/allslides");
   const s = (delay: number, anim = "fadeInRight"): React.CSSProperties =>
@@ -10,8 +12,9 @@ export default function Slide13SectionMinorArike() {
       {/* Yellow right panel */}
       <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "42vw", background: "#FACB10" }}>
         <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "30vw", height: "30vw", borderRadius: "50%", border: "2px solid rgba(0,0,0,0.08)" }} />
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "20vw", height: "20vw", borderRadius: "50%", border: "2px solid rgba(0,0,0,0.06)" }} />
-        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "10vw", height: "10vw", borderRadius: "50%", background: "rgba(0,0,0,0.05)" }} />
+        <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: "20vw", height: "20vw", borderRadius: "50%", background: "#F4F4F5", border: "2px solid rgba(0,0,0,0.06)", display: "flex", alignItems: "center", justifyContent: "center", overflow: "hidden" }}>
+          <img src={`${base}arike-logo.png`} alt="Arike Logo" style={{ width: "60%", height: "60%", objectFit: "contain" }} />
+        </div>
         <div style={{ ...s(0.7, "fadeInRight"), position: "absolute", bottom: "5vh", right: "4vw", textAlign: "right" }}>
           <span style={{ fontFamily: "var(--font-body-family)", fontSize: "1.5vw", color: "rgba(0,0,0,0.4)", letterSpacing: "0.1em" }}>4 Features</span>
         </div>
