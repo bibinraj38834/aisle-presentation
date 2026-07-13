@@ -1,0 +1,64 @@
+Add a summary table instead of today’s map with these classifications mentioned below.
+
+Major Tasks - Aisle
+
+* Clevertap Integration 
+* Date Feedback
+* SmartPicks Aisle 
+
+Major Tasks - Arike
+
+* Socket on Vernacs 
+* MBG Arike 
+* Support Lounge for Arike 
+
+Minor Tasks - Aisle
+
+* Tracking when Passed profile is repeated in Discover section 
+* DS Signal for Google Ads
+
+Minor Tasks - Arike
+
+*   Free for Female Phase 2 events issue 
+* Pop up after Images are uploaded by users (Vernacs) 
+* Make Google Play icon visiblity BE on Vernacs for Indian Users 
+* Chat tracking task
+
+Ongoing
+
+Aisle
+
+* Web CheckOut Aisle 
+* Inform users for deleted matches
+* Multi Comment UX 
+
+Arike
+
+* Web CheckOut Arike 
+* Arike SmartPicks
+* Inform users who do significant blocking 
+* International Payment Gateway Arike 
+* 90 D check on Arike
+
+Common
+* Hang rate improvements
+* Shuffle profile photos for passed profiles
+
+Also some of the task have photos to be added. Leave space for the photos to be added in the slide deck. I will provide the number of photos for these tasks. Rest can be without any files or photos.
+
+Folder	Attachments	Description
+Arike SmartPicks	2	Arike SmartPicks profile and completion popup assets
+Clevertap	4	CleverTap setup/event tracking screenshots
+Inform users for deleted matches	2	Deleted/disabled match communication screens
+Inform users who do significant blocking	1	Blocking education/warning screen
+MBG Arike	3	Arike Money Back Guarantee paywall and info sheet
+Multi Comment UX	2	Comment UX screenshot and motion file
+Pop up after Images are uploaded by users	1	Image-upload review popup screenshot
+Smartpicks Aisle	2	Aisle SmartPicks profile and completion popup assets
+Support Lounge for Arike	3	Arike Support Lounge screenshots
+Web CheckOut Aisle	2	Aisle Plus and Premium checkout screens
+Web CheckOut Arike	5	Arike web checkout screens
+date feedback	4	Date feedback intro and feedback flow screens
+socket On vernacs	2	Vernacs socket screenshot and screen recording
+Keep the overall theme as  Keep aisle as wine(#91366C) and indigo (#332373)and white and Arike as yellow(#FACB10) and black and white and vernacs can be anything else.  Add heavy animations when transitions
+

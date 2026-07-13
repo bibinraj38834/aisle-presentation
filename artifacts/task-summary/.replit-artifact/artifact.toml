@@ -1,0 +1,27 @@
+kind = "slides"
+previewPath = "/task-summary/"
+title = "Engineering Task Summary"
+version = "1.0.0"
+id = "artifacts/task-summary"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/task-summary/" ]
+localPort = 18700
+
+[services.development]
+run = "pnpm --filter @workspace/task-summary run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/task-summary", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/task-summary/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18700"
+BASE_PATH = "/task-summary/"

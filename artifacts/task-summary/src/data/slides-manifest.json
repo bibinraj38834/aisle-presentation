@@ -1,0 +1,138 @@
+[
+  {
+    "id": "a1b2c3d4-0001-4000-8000-ef1234560001",
+    "position": 1,
+    "filepath": "src/pages/slides/Slide01Title.tsx",
+    "title": "Title",
+    "description": "Engineering Task Summary — July 2026",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0002-4000-8000-ef1234560002",
+    "position": 2,
+    "filepath": "src/pages/slides/Slide02SummaryTable.tsx",
+    "title": "Task Summary",
+    "description": "All 22 tasks at a glance by category and status",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0003-4000-8000-ef1234560003",
+    "position": 3,
+    "filepath": "src/pages/slides/Slide03SectionAisle.tsx",
+    "title": "Major Tasks — Aisle",
+    "description": "Section divider: 3 major Aisle features",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0004-4000-8000-ef1234560004",
+    "position": 4,
+    "filepath": "src/pages/slides/Slide04CleverTap.tsx",
+    "title": "CleverTap Integration",
+    "description": "Aisle — In Progress — 4 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0005-4000-8000-ef1234560005",
+    "position": 5,
+    "filepath": "src/pages/slides/Slide05DateFeedback.tsx",
+    "title": "Date Feedback",
+    "description": "Aisle — In Prod — 4 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0006-4000-8000-ef1234560006",
+    "position": 6,
+    "filepath": "src/pages/slides/Slide06SmartPicksAisle.tsx",
+    "title": "SmartPicks Aisle",
+    "description": "Aisle — Complete — 2 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0007-4000-8000-ef1234560007",
+    "position": 7,
+    "filepath": "src/pages/slides/Slide07SectionArike.tsx",
+    "title": "Major Tasks — Arike",
+    "description": "Section divider: 3 major Arike features",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0008-4000-8000-ef1234560008",
+    "position": 8,
+    "filepath": "src/pages/slides/Slide08SocketVernacs.tsx",
+    "title": "Socket on Vernacs",
+    "description": "Arike / Vernacs — In Prod — 2 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0009-4000-8000-ef1234560009",
+    "position": 9,
+    "filepath": "src/pages/slides/Slide09MBGArike.tsx",
+    "title": "MBG Arike",
+    "description": "Arike — In Prod — 3 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0010-4000-8000-ef1234560010",
+    "position": 10,
+    "filepath": "src/pages/slides/Slide10SupportLounge.tsx",
+    "title": "Support Lounge for Arike",
+    "description": "Arike — In Progress — 3 photo slots",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0011-4000-8000-ef1234560011",
+    "position": 11,
+    "filepath": "src/pages/slides/Slide11MinorAisle.tsx",
+    "title": "Minor Tasks — Aisle",
+    "description": "Tracking Passed Profiles + DS Signal for Google Ads",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0012-4000-8000-ef1234560012",
+    "position": 12,
+    "filepath": "src/pages/slides/Slide12MinorArike.tsx",
+    "title": "Minor Tasks — Arike",
+    "description": "4 minor Arike tasks with 1 photo slot",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0013-4000-8000-ef1234560013",
+    "position": 13,
+    "filepath": "src/pages/slides/Slide13OngoingAisle.tsx",
+    "title": "Ongoing — Aisle",
+    "description": "Web Checkout + Deleted Matches + Multi Comment UX (6 photo slots)",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0014-4000-8000-ef1234560014",
+    "position": 14,
+    "filepath": "src/pages/slides/Slide14OngoingArike1.tsx",
+    "title": "Ongoing — Arike (1 of 2)",
+    "description": "Web Checkout (5 photos) + SmartPicks (2 photos)",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0015-4000-8000-ef1234560015",
+    "position": 15,
+    "filepath": "src/pages/slides/Slide15OngoingArike2.tsx",
+    "title": "Ongoing — Arike (2 of 2)",
+    "description": "Blocking (1 photo) + Intl Payment + 90D Check",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0016-4000-8000-ef1234560016",
+    "position": 16,
+    "filepath": "src/pages/slides/Slide16Common.tsx",
+    "title": "Common Tasks",
+    "description": "Hang Rate Improvements + Shuffle Profile Photos",
+    "speakerNotes": ""
+  },
+  {
+    "id": "a1b2c3d4-0017-4000-8000-ef1234560017",
+    "position": 17,
+    "filepath": "src/pages/slides/Slide17Closing.tsx",
+    "title": "Closing",
+    "description": "Keep Building — summary stats",
+    "speakerNotes": ""
+  }
+]
