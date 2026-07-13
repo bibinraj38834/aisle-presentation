@@ -126,7 +126,7 @@ export default function Slide01Title() {
         <h1 style={{ ...s(0.35), fontSize: "10vw", fontWeight: 800, lineHeight: 0.92, letterSpacing: "-0.03em", color: "#fff", margin: 0 }}>TASK</h1>
         <h1 style={{ ...s(0.5), fontSize: "10vw", fontWeight: 800, lineHeight: 0.92, letterSpacing: "-0.03em", background: "linear-gradient(90deg, #91366C, #7B47CC)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", margin: 0 }}>SUMMARY</h1>
 
-        <p style={{ ...s(0.7, "fadeInUp"), fontFamily: "var(--font-body-family)", fontSize: "2vw", color: "#7B7F9A", marginTop: "3.5vh", marginBottom: "4vh" }}>July 2026</p>
+        <p style={{ ...s(0.7, "fadeInUp"), fontFamily: "var(--font-body-family)", fontSize: "2vw", color: "#7B7F9A", marginTop: "3.5vh", marginBottom: "4vh" }}>June 2026</p>
 
         {/* Product badges */}
         <div style={{ ...s(0.85, "fadeInUp"), display: "flex", gap: "1.2vw" }}>

@@ -24,7 +24,7 @@ export default function Slide17Closing() {
 
       {/* Central content */}
       <div className="absolute inset-0 flex flex-col items-center justify-center" style={{ padding: "0 8vw" }}>
-        <p style={{ ...s(0.1), fontFamily: "var(--font-body-family)", fontSize: "1.7vw", letterSpacing: "0.35em", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: "2.5vh" }}>July 2026</p>
+        <p style={{ ...s(0.1), fontFamily: "var(--font-body-family)", fontSize: "1.7vw", letterSpacing: "0.35em", color: "rgba(255,255,255,0.4)", textTransform: "uppercase", marginBottom: "2.5vh" }}>June 2026</p>
 
         <h1 style={{ ...s(0.25), fontSize: "9vw", fontWeight: 800, lineHeight: 0.9, letterSpacing: "-0.04em", textAlign: "center", margin: "0 0 3.5vh 0", color: "#fff" }}>
           Keep Building.
