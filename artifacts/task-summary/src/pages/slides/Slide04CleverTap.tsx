@@ -42,8 +42,7 @@ export default function Slide04CleverTap() {
           Integrates CleverTap as analytics and engagement destination. Covers login, onboarding, profile views, likes, matches, payments, and more via Kafka events.
         </p>
 
-        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr", gridTemplateRows: "1fr 1fr", gap: "2vh 2vw" }}>
-          <PhotoSlot label="Photo 1 of 4" />
+        <div style={{ ...s(0.55, "fadeInUp"), flex: 1, display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "2vh 2vw" }}>
           <Img src={`${base}clevertap-2.png`} alt="CleverTap user activity" />
           <Img src={`${base}clevertap-3.png`} alt="CleverTap user profile" />
           <Img src={`${base}clevertap-4.png`} alt="CleverTap device details" />
