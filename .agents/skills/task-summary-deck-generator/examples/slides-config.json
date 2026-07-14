@@ -1,0 +1,35 @@
+{
+  "title": "Engineering Task Summary",
+  "date": "June 2026",
+  "teams": ["Aisle", "Arike", "Vernacs"],
+  "tasks": [
+    {
+      "title": "CleverTap Integration",
+      "app": "Aisle",
+      "category": "Major",
+      "status": "Completed",
+      "prdPoints": [
+        "Migrated SDK: Replaced heavy client-side SDK with lightweight HTTP endpoints to reduce download payload.",
+        "Profile Syncing: Automated user segment properties synchronization in real-time.",
+        "Event Tracking: Configured conversion event logging for premium subscriptions."
+      ],
+      "screenshots": [
+        "clevertap-1.png",
+        "clevertap-2.png"
+      ]
+    },
+    {
+      "title": "Socket on Vernacs",
+      "app": "Arike",
+      "category": "Major",
+      "status": "Completed",
+      "prdPoints": [
+        "Real-time Updates: Implemented socket connections for localizations.",
+        "Performance Tuning: Reduced messaging latency on localized channels."
+      ],
+      "screenshots": [
+        "socket-on-vernacs-2.png"
+      ]
+    }
+  ]
+}
